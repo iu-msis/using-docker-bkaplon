@@ -8,6 +8,41 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+  th[role=columnheader]:not(.no-sort) {
+  	cursor: pointer;
+  }
+
+  th[role=columnheader]:not(.no-sort):after {
+  	content: '';
+  	float: right;
+  	margin-top: 7px;
+  	border-width: 0 4px 4px;
+  	border-style: solid;
+  	border-color: #404040 transparent;
+  	visibility: hidden;
+  	opacity: 0;
+  	-ms-user-select: none;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	user-select: none;
+  }
+
+  th[aria-sort=ascending]:not(.no-sort):after {
+  	border-bottom: none;
+  	border-width: 4px 4px 0;
+  }
+
+  th[aria-sort]:not(.no-sort):after {
+  	visibility: visible;
+  	opacity: 0.4;
+  }
+
+  th[role=columnheader]:not(.no-sort):hover:after {
+  	visibility: visible;
+  	opacity: 1;
+  }
+</style>
   <style>
     .bgcolor {background-color: LightGray}
     .txtcolor {color: MediumSeaGreen}
@@ -55,12 +90,12 @@
   <table id="BooksTable"class="table table-dark table-striped">
     <thead>
       <tr>
-        <th>Title</th>
-        <th>Author(s)</th>
-        <th>Year Published</th>
-        <th>Publisher</th>
-        <th>Page Count</th>
-        <th>MSRP</th>
+        <th role="columnheader"tablesort="">Title</th>
+        <th role="columnheader"aria-sort="">Author(s)</th>
+        <th role="columnheader"aria-sort="">Year Published</th>
+        <th role="columnheader"aria-sort="">Publisher</th>
+        <th role="columnheader"aria-sort="">Page Count</th>
+        <th role="columnheader"aria-sort="">MSRP</th>
       </tr>
     </thead>
     <tbody>
