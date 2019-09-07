@@ -1,0 +1,35 @@
+background color
+text color
+header color
+link color
+<head>
+<style>
+  .bgcolor {background-color: LightGray}
+  .txtcolor {color: MediumSeaGreen}
+  .headercolor {color: Slateblue}
+</style>
+</head>
+
+/* retrieved link options from https://www.w3schools.com/css/css_link.asp */
+
+  /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: rgb(153, 161, 0);
+}
+
+#button {background-color: Black}
