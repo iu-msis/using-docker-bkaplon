@@ -54,7 +54,7 @@ a:active {
   <body class= bgcolor>
     <div class="container-fluid">
       <h2 class= headercolor>User Information</h2>
-      <table class="table table-dark table-striped">
+      <table id="User_InformationTable"class="table table-dark table-striped">
         <thead>
           <tr>
             <th>First Name</th>
@@ -126,5 +126,9 @@ a:active {
   <button id=button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+<script src="JS/tablesort.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('User_InformationTable'));
+</script>
   </body>
 </html>

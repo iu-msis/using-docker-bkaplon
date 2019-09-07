@@ -52,7 +52,7 @@
   </nav>
 <div class="container-fluid">
   <h2 class= headercolor>Books</h2>
-  <table class="table table-dark table-striped">
+  <table id="BooksTable"class="table table-dark table-striped">
     <thead>
       <tr>
         <th>Title</th>
@@ -130,5 +130,9 @@
   <button id= button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+<script src="JS/tablesort.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('BooksTable'));
+</script>
 </body>
 </html>
