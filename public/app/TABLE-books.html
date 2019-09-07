@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>TABLE-books</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Taken from tristen -->
 <style>
   th[role=columnheader]:not(.no-sort) {
   	cursor: pointer;
@@ -19,7 +20,7 @@
   	margin-top: 7px;
   	border-width: 0 4px 4px;
   	border-style: solid;
-  	border-color: #404040 transparent;
+  	border-color: red transparent;
   	visibility: hidden;
   	opacity: 0;
   	-ms-user-select: none;
@@ -90,12 +91,12 @@
   <table id="BooksTable"class="table table-dark table-striped">
     <thead>
       <tr>
-        <th role="columnheader"tablesort="">Title</th>
-        <th role="columnheader"aria-sort="">Author(s)</th>
-        <th role="columnheader"aria-sort="">Year Published</th>
-        <th role="columnheader"aria-sort="">Publisher</th>
-        <th role="columnheader"aria-sort="">Page Count</th>
-        <th role="columnheader"aria-sort="">MSRP</th>
+        <th role="columnheader">Title</th>
+        <th role="columnheader">Author(s)</th>
+        <th role="columnheader">Year Published</th>
+        <th role="columnheader">Publisher</th>
+        <th role="columnheader">Page Count</th>
+        <th role="columnheader">MSRP</th>
       </tr>
     </thead>
     <tbody>
