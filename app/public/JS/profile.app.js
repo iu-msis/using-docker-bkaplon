@@ -12,4 +12,5 @@ var profileApp = new Vue({
 created() {
   this.fetchresults()
 }
-});
+})
+;

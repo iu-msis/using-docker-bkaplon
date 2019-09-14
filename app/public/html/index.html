@@ -54,19 +54,24 @@ a:active {
 
 <div class="container">
   <div class="row">
-    <div id="profileAppVue">
-    <div>
+    <div id="profileAppVue" v-for="result in results">
     <span> {{results.name.first}} </span>
+    <br>
     <span> {{results.name.last}} </span>
+    <br>
     <span> {{results.timezone.description}} </span>
+    <br>
     <span> {{results.dob}} </span>
+    <br>
     <span> {{results.dob.age}} </span>
+    <br>
     <span> {{results.email}} </span>
+    <br>
     <span> {{results.picture.thumbnail}} </span>
-    </div>
-    </div>
   </div>
 </div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="JS/profile.app.js"></script>
