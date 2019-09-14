@@ -34,6 +34,7 @@ a:active {
     .headercolor {color: Slateblue}
 
 #button {background-color: Black}
+
   </style>
   </head>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -53,22 +54,21 @@ a:active {
 
 <div class="container">
   <div class="row">
-    <div <h1 class= txtcolor align="center"> Welcome </h1>
-    </div>
-    <div id="profileappvue">
-    <div v-for="results in results">
-    <span> {{results.first}} </span>
-    <span> {{results.last}} </span>
+    <div id="profileAppVue">
+    <div>
+    <span> {{results.name.first}} </span>
+    <span> {{results.name.last}} </span>
     <span> {{results.timezone.description}} </span>
     <span> {{results.dob}} </span>
     <span> {{results.dob.age}} </span>
     <span> {{results.email}} </span>
-    <span> {{results.thumbnail}} </span>
+    <span> {{results.picture.thumbnail}} </span>
+    </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="JS/profile.app.js"></script>
-</div>
-</div>
-</div>
-</div>
   </body>
 </html>
