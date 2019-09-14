@@ -50,19 +50,25 @@ a:active {
       </ul>
   </nav>
   <body class= bgcolor>
+
 <div class="container">
   <div class="row">
-    <div <h1 class= txtcolor align="center"> Welcome </h1>>
+    <div <h1 class= txtcolor align="center"> Welcome </h1>
     </div>
     <div id="profileappvue">
-    <span> {{profile.first}} </span>
-    <span> {{profile.last}} </span>
-    <span> {{profile.timezone.description}} </span>
-    <span> {{profile.dob}} </span>
-    <span> {{profile.dob.age}} </span>
-    <span> {{profile.email}} </span>
-    <span> {{profile.thumbnail}} </span>
+    <div v-for="results in results">
+    <span> {{results.first}} </span>
+    <span> {{results.last}} </span>
+    <span> {{results.timezone.description}} </span>
+    <span> {{results.dob}} </span>
+    <span> {{results.dob.age}} </span>
+    <span> {{results.email}} </span>
+    <span> {{results.thumbnail}} </span>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="JS/profile.app.js"></script>
+</div>
+</div>
+</div>
+</div>
   </body>
 </html>
