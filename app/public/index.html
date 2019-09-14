@@ -50,37 +50,19 @@ a:active {
       </ul>
   </nav>
   <body class= bgcolor>
-<h1 class= txtcolor align="center"> Welcome </h1>
-<div class="container-fluid">
-      <h2 class= headercolor>Current User Information</h2>
-      <table id="IndexTable"class="table table-dark table-striped">
-        <thead>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Country of Origin</th>
-            <th>Birthdate</th>
-            <th>Age</th>
-            <th>Email</th>
-            <th>Profile Picture</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Foster</td>
-            <td>Argentina</td>
-            <td>10/12/1985</td>
-            <td>33</td>
-            <td><a href="mailto:mark.foster@yahoo.com?Subject=Hello" target="_top">mark.foster@yahoo.com</a></td>
-            <td><a target="_blank" href="https://randomuser.me/api/portraits/men/63.jpg"><cite>Randomuser.me</cite><img src="https://randomuser.me/api/portraits/men/63.jpg" alt="Profile Picture" class="img-thumbnail"></a></td>
-          </tr>
-        </tbody>
-      </table>
+<div class="container">
+  <div class="row">
+    <div <h1 class= txtcolor align="center"> Welcome </h1>>
     </div>
-    <script src="JS/tablesort.min.js"></script>
-    <script>
-  new Tablesort(document.getElementById('IndexTable'));
-</script>
+    <div id="profileappvue">
+    <span> {{profile.first}} </span>
+    <span> {{profile.last}} </span>
+    <span> {{profile.timezone.description}} </span>
+    <span> {{profile.dob}} </span>
+    <span> {{profile.dob.age}} </span>
+    <span> {{profile.email}} </span>
+    <span> {{profile.thumbnail}} </span>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="JS/profile.app.js"></script>
   </body>
 </html>
