@@ -54,20 +54,20 @@ a:active {
 
 <div class="container">
   <div class="row">
-    <div id="profileAppVue" v-for="result in results">
-    <span> {{results.name.first}} </span>
+    <div id="profileAppVue" v-for="users in results">
+    <span> {{users.name.first}} </span>
     <br>
-    <span> {{results.name.last}} </span>
+    <span> {{users.name.last}} </span>
     <br>
-    <span> {{results.timezone.description}} </span>
+    <span> {{users.nat}} </span>
     <br>
-    <span> {{results.dob}} </span>
+    <span> {{users.dob}} </span>
     <br>
-    <span> {{results.dob.age}} </span>
+    <span> {{users.dob.age}} </span>
     <br>
-    <span> {{results.email}} </span>
+    <span> {{users.email}} </span>
     <br>
-    <span> {{results.picture.thumbnail}} </span>
+    <span> {{users.picture.thumbnail}} </span>
   </div>
 </div>
 </div>
