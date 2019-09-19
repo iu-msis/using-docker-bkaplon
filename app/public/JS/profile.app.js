@@ -5,12 +5,13 @@ var profileApp = new Vue({
   },
   methods: {
     fetchresults() {
-		fetch ('https://randomuser.me/api/')
-		.then(function(response){profileApp.users.results[0] = response.json() });
+  		fetch ('https://randomuser.me/api/')
+  		.then(function(response) {return response.json()})
+      .then(function(json) {profileApp.users = json.results});
+    }
+  },
+  created() {
+    this.fetchresults()
   }
-},
-created() {
-  this.fetchresults()
-}
 })
 ;

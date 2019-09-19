@@ -53,21 +53,21 @@ a:active {
   <body class= bgcolor>
 
 <div class="container">
-  <div class="row">
-    <div id="profileAppVue" v-for="results in users">
-    <span> {{users.name.first}} </span>
+  <div id="profileAppVue" class="row">
+    <div v-for="user in users">
+    <span> {{user.name.first}} </span>
     <br>
-    <span> {{users.name.last}} </span>
+    <span> {{user.name.last}} </span>
     <br>
-    <span> {{users.nat}} </span>
+    <span> {{user.nat}} </span>
     <br>
-    <span> {{users.dob}} </span>
+    <span> {{user.dob.date}} </span>
     <br>
-    <span> {{users.dob.age}} </span>
+    <span> {{user.dob.age}} </span>
     <br>
-    <span> {{users.email}} </span>
+    <span> <a v-bind:href="'mailto:' + user.email">{{ user.email }}</a></span>
     <br>
-    <span> {{users.picture.thumbnail}} </span>
+    <span><img v-bind:src="user.picture.thumbnail"></span>
   </div>
 </div>
 </div>
