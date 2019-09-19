@@ -55,17 +55,17 @@ a:active {
 <div class="container">
   <div id="profileAppVue" class="row">
     <div v-for="user in users">
-    <span> {{user.name.first}} </span>
+  First Name:  <span> {{user.name.first}} </span>
     <br>
-    <span> {{user.name.last}} </span>
+  Last Name:  <span> {{user.name.last}} </span>
     <br>
-    <span> {{user.nat}} </span>
+  Nationality:  <span> {{user.nat}} </span>
     <br>
-    <span> {{user.dob.date}} </span>
+  Date of Birth:  <span> {{user.dob.date}} </span>
     <br>
-    <span> {{user.dob.age}} </span>
+  Age:  <span> {{user.dob.age}} </span>
     <br>
-    <span> <a v-bind:href="'mailto:' + user.email">{{ user.email }}</a></span>
+  Email:  <span> <a v-bind:href="'mailto:' + user.email">{{ user.email }}</a></span>
     <br>
     <span><img v-bind:src="user.picture.thumbnail"></span>
   </div>
