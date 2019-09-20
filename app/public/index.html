@@ -52,6 +52,7 @@ a:active {
   </nav>
   <body class= bgcolor>
 
+<form v-on:submit="onSubmit">
 <div class="container">
   <div id="profileAppVue" class="row">
     <div v-for="user in users">
@@ -68,9 +69,12 @@ a:active {
   Email:  <span> <a v-bind:href="'mailto:' + user.email">{{ user.email }}</a></span>
     <br>
     <span><img v-bind:src="user.picture.thumbnail"></span>
+    <br>
+    <button  id= button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </div>
 </div>
+</form>
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
